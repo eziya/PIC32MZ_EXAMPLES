@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/default/production/PIC32MZ_HMC_MRF24WG.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>2098304</length>                 
+      <used>231640</used>                     
+      <free>1866664</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>524288</length>                 
+      <used>77428</used>                     
+      <free>446860</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

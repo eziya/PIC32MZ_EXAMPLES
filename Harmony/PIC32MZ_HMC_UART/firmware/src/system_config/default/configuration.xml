@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <HarmonyPath dnOrder="0" path="../../../../microchip/harmony/v2_06"/>
+    <Processor dnOrder="1" name="PIC32MZ2048EFG100"/>
+    <Board dnOrder="2" name=" "/>
+    <ForceOptimization dnOrder="3" flag="true"/>
+    <MergeStrategy dnOrder="4" flag="USER_ALL"/>
+  </General>
+  <Manifest>
+    <Files dnOrder="0">
+      <File dnOrder="0">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_dma.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">sys_dma_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/dma</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">drv_usart_byte_model.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">drv_usart_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">drv_usart.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usart/src/dynamic</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">sys_common.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">sys_buffer.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_int_pic32.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">drv_usart_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">sys_ports_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">sys_int_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_int_private.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">drv_usart.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usart</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">drv_usart_variant_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usart/src</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">sys_module.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_queue.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
+      </File>
+    </Files>
+    <Templates dnOrder="1">
+      <Template dnOrder="0">
+        <Name dnOrder="0">sys_ports_static.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/ports/src</Path>
+        <Checksum dnOrder="2">93E28E8A978CC9B734D61F2B5B37DE5D</Checksum>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">system_init.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">D01597323AEDCF6AA59DB9F79C84F383</Checksum>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">sys_devcon_cache.h</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">5EB0485AC07A8B25665195B960AFBE5B</Checksum>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="4">
+        <Name dnOrder="0">system_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">69F0BD9EC448D4F4125BC86BA1536578</Checksum>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">system_exceptions.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">9836A04F3E98D3971DB91DF539160F34</Checksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">sys_devcon.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">54ADBD4A35BCA03C42C74182FCE41849</Checksum>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">sys_devcon_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">B66F9B4DBD85DA7F9DE775E864E01395</Checksum>
+      </Template>
+      <Template dnOrder="9">
+        <Name dnOrder="0">sys_devcon_cache_pic32mz.S</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">D0A9CCA1CA85BB1CE7364A5DE10CC07D</Checksum>
+      </Template>
+      <Template dnOrder="10">
+        <Name dnOrder="0">sys_devcon.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default/framework/system/devcon</Path>
+        <Checksum dnOrder="2">07580DCDEF89D9C79B062544109C5367</Checksum>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">sys_devcon_pic32mz.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/devcon/src</Path>
+        <Checksum dnOrder="2">D011F212E6410A0C92087C188E1F60AF</Checksum>
+      </Template>
+      <Template dnOrder="12">
+        <Name dnOrder="0">system_tasks.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">C2FDF6218CDD9CE0E51AFAC4ACBB5F79</Checksum>
+      </Template>
+      <Template dnOrder="13">
+        <Name dnOrder="0">system_config.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">B70C20AB915893694BD5480D663AC7DF</Checksum>
+      </Template>
+      <Template dnOrder="14">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">system_interrupt.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
+        <Checksum dnOrder="2">A52065140F2B9D3BDB092972F3DD0817</Checksum>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">sys_clk_pic32mz.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/clk/src</Path>
+        <Checksum dnOrder="2">CC45A61DC821F2A45FBFD5EB0F76DD59</Checksum>
+      </Template>
+    </Templates>
+    <CompilerItems dnOrder="2">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="E:\Workspace\PIC32MZ_EXAMPLES\Harmony\PIC32MZ_HMC_UART\firmware\src"/>
+        <Include dnOrder="1" value="E:\Workspace\PIC32MZ_EXAMPLES\Harmony\PIC32MZ_HMC_UART\firmware\src\system_config\default"/>
+        <Include dnOrder="2" value="E:\Workspace\PIC32MZ_EXAMPLES\Harmony\PIC32MZ_HMC_UART\firmware\src\default"/>
+        <Include dnOrder="3" value="E:\microchip\harmony\v2_06\framework"/>
+        <Include dnOrder="4" value="E:\Workspace\PIC32MZ_EXAMPLES\Harmony\PIC32MZ_HMC_UART\firmware\src\system_config\default\framework"/>
+      </C32>
+    </CompilerItems>
+    <Libraries dnOrder="3">
+      <Library dnOrder="0" value="../../../../../../microchip/harmony/v2_06/bin/framework/peripheral/PIC32MZ2048EFG100_peripherals.a"/>
+    </Libraries>
+  </Manifest>
+</Configuration>

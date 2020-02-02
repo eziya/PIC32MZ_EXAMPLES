@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="app" projectFiles="true">
+        <logicalFolder name="f1" displayName="system_config" projectFiles="true">
+          <logicalFolder name="f1" displayName="default" projectFiles="true">
+            <logicalFolder name="f1" displayName="framework" projectFiles="true">
+              <logicalFolder name="f1" displayName="system" projectFiles="true">
+                <logicalFolder name="f1" displayName="clk" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/clk/src/sys_clk_local.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="devcon" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_local.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>../src/system_config/default/framework/system/devcon/sys_devcon.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>../src/system_config/default/FreeRTOSConfig.h</itemPath>
+            <itemPath>../src/system_config/default/system_config.h</itemPath>
+            <itemPath>../src/system_config/default/system_definitions.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../src/wnetcom.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f6" displayName="crypto" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/crypto/src/des3.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="spi" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/dynamic/drv_spi_internal.h</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/drv_spi_sys_queue.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/drv_spi_sys_queue_local_fifo.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/drv_spi_variant_mapping.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/drv_spi.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/src/drv_tmr_variant_mapping.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/src/drv_tmr_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/drv_tmr.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/drv_tmr_mapping.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/drv_tmr_compatibility.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="usart" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/src/drv_usart_variant_mapping.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/src/drv_usart_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/drv_usart.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="wifi" projectFiles="true">
+            <logicalFolder name="f1" displayName="mrf24w" projectFiles="true">
+              <logicalFolder name="f1" displayName="src" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_commands.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_config_data.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_debug_output.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_eint.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_iwpriv.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_mac.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_mgmt_msg.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_priv.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_raw.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_scan_helper.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_softap_client_cache.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_spi.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_rtos_wrapper.h</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/drv_wifi.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/driver.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/driver_common.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="net" projectFiles="true">
+          <logicalFolder name="f1" displayName="pres" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/net/pres/net_pres.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="osal" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/src/osal_impl_basic.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/src/osal_impl_none.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/src/osal_freertos.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/osal.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/osal_definitions.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="system" projectFiles="true">
+          <logicalFolder name="f4" displayName="clk" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/src/sys_clk_local.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/src/sys_clk_pic32mz.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/src/sys_clk_variant_mapping.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/sys_clk.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/sys_clk_mapping.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/clk/sys_clk_compatibility.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="command" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/command/sys_command.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="common" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/common/sys_common.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/common/sys_module.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/common/sys_buffer.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/common/sys_queue.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f7" displayName="console" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/console/src/sys_console_local.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/console/src/sys_console_uart.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/console/sys_console.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f8" displayName="debug" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/debug/sys_debug.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="dma" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/dma/src/sys_dma_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/dma/sys_dma.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f12" displayName="fs" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/fs/sys_fs.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/int/src/sys_int_private.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/int/sys_int.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/int/sys_int_mapping.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="ports" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/ports/sys_ports.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f9" displayName="random" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/random/src/sys_random_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/random/sys_random.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f10" displayName="reset" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/reset/src/sys_reset_local.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/reset/src/sys_reset_mapping.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/reset/sys_reset.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f11" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/tmr/src/sys_tmr_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/tmr/sys_tmr.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/system.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="tcpip" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <logicalFolder name="f2" displayName="common" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/common/helpers.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="crypto" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_cbc.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_cfb.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_ctr.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_ecb.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_ecb_pic32.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/crypto/aes_ofb.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ipv4_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ipv4_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ndp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ndp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ipv6_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ipv6_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/icmpv6_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/udp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/udp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_heap_alloc.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/arp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/arp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcps_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcps_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dns_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dns_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dnss_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dnss_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ddns_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ftp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ftp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/http_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/http_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/http_net_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/http_net_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/icmp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/nbns_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_reboot_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/smtp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/smtpc_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/smtpc_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/snmp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/snmp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/snmpv3_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/sntp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/telnet_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/zero_conf_helper.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/zero_conf_link_local_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/zero_conf_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_announce_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/iperf_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_commands_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tftpc_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tftpc_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/igmp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/igmp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/hash_fnv.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/link_list.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/oahash.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_helpers_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_manager_control.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_module_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_notify.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_packet.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_types.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/berkeley_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcpv6_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcpv6_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/lldp_manager.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/lldp_private.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/lldp_tlv.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/ipv4.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/ndp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/ipv6.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/icmpv6.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/udp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_heap.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/arp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/berkeley_api.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tls.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/dhcp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/dhcps.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/dns.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/dnss.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/ddns.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/ftp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/http.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/http_net.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/icmp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/nbns.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/smtp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/smtpc.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/snmp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/snmpv3.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/sntp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/telnet.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/zero_conf_link_local.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/zero_conf_multicast_dns.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/iperf.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_commands.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tftpc.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/igmp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_helpers.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_manager.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/dhcpv6.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/lldp.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_announce.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_reboot.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_common_ports.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_mac.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_mac_object.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/tcpip_ethernet.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="portable" projectFiles="true">
+          <logicalFolder name="f1" displayName="MPLAB" projectFiles="true">
+            <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/ISR_Support.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/event_groups.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/list.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/portable.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/projdefs.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/queue.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/semphr.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/StackMacros.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/task.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/timers.h</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="app" projectFiles="true">
+        <logicalFolder name="f1" displayName="system_config" projectFiles="true">
+          <logicalFolder name="f1" displayName="default" projectFiles="true">
+            <logicalFolder name="f1" displayName="framework" projectFiles="true">
+              <logicalFolder name="f1" displayName="driver" projectFiles="true">
+                <logicalFolder name="f1" displayName="spi" projectFiles="true">
+                  <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_tasks.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_api.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_master_ebm_tasks.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_master_dma_tasks.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="system" projectFiles="true">
+                <logicalFolder name="f1" displayName="clk" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/clk/src/sys_clk.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="devcon" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_cache.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f3" displayName="ports" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/ports/src/sys_ports_static.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>../src/system_config/default/system_init.c</itemPath>
+            <itemPath>../src/system_config/default/system_interrupt.c</itemPath>
+            <itemPath>../src/system_config/default/system_exceptions.c</itemPath>
+            <itemPath>../src/system_config/default/system_tasks.c</itemPath>
+            <itemPath>../src/system_config/default/system_interrupt_a.S</itemPath>
+            <itemPath>../src/system_config/default/rtos_hooks.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../src/wnetcom.c</itemPath>
+        <itemPath>../src/main.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f1" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="spi" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/dynamic/drv_spi.c</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/spi/src/drv_spi_sys_queue_fifo.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/tmr/src/dynamic/drv_tmr.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="usart" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/src/dynamic/drv_usart.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/usart/src/dynamic/drv_usart_read_write.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="wifi" projectFiles="true">
+            <logicalFolder name="f1" displayName="mrf24w" projectFiles="true">
+              <logicalFolder name="f1" displayName="src" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_com.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_commands.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_config_data.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_connection_algorithm.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_connection_manager.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_connection_profile.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_context_loader.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_debug_output.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_eint.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_events.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_event_handler.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_init.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_iwpriv.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_mac.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_main.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_mgmt_msg.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_param_msg.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_pbkdf2.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_power_save.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_raw.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_scan.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_scan_helper.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_softap_client_cache.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_spi.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_tx_power.c</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/driver/wifi/mrf24w/src/drv_wifi_rtos_wrapper.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="osal" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/osal/src/osal_freertos.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="system" projectFiles="true">
+          <logicalFolder name="f1" displayName="command" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/command/src/sys_command.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="console" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/console/src/sys_console.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/console/src/sys_console_uart.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="dma" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/dma/src/sys_dma.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/int/src/sys_int_pic32.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="random" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/random/src/sys_random.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="reset" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/reset/src/sys_reset.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f7" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/system/tmr/src/sys_tmr.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="tcpip" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <logicalFolder name="f1" displayName="common" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/common/helpers.c</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/ipv4.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcp.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/udp.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_heap_alloc.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_heap_internal.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/arp.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dhcp.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/dns.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/icmp.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/nbns.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/zero_conf_helper.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/zero_conf_link_local.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_announce.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_commands.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/hash_fnv.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/oahash.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_helpers.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_helper_c32.S</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_manager.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_notify.c</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/framework/tcpip/src/tcpip_packet.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="f1" displayName="portable" projectFiles="true">
+          <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="MPLAB" projectFiles="true">
+            <logicalFolder name="f1" displayName="PIC32MZ" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/port_asm.S</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/croutine.c</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/queue.c</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/tasks.c</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/timers.c</itemPath>
+        <itemPath>../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+    <Elem>../../../../microchip/harmony/v2_02_00b</Elem>
+    <Elem>..\src</Elem>
+    <Elem>..\src\default</Elem>
+    <Elem>..\src\system_config\default</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MZ2048EFG100</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD4Tool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>2.30</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.0.20"/>
+      </packs>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>../../../../../../microchip/harmony/v2_02_00b/bin/framework/peripheral/PIC32MZ2048EFG100_peripherals.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src;../src/system_config/default;../src/default;../../../../../../microchip/harmony/v2_02_00b/framework;../src/system_config/default/framework;../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler"
+                  value="../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include;../src/system_config/default"/>
+        <property key="extra-include-directories-for-preprocessor"
+                  value="../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../../../../../../microchip/harmony/v2_02_00b/third_party/rtos/FreeRTOS/Source/include;../src/system_config/default"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="additional-options-write-sla" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value="44960"/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-device-startup-code" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="true"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories"
+                  value="D:\Program Files (x86)\Microchip\xc32\v2.30\pic32mx\include"/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="false"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <ICD4Tool>
+        <property key="ADC" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CHANGE NOTICE A" value="true"/>
+        <property key="CHANGE NOTICE B" value="true"/>
+        <property key="CHANGE NOTICE C" value="true"/>
+        <property key="CHANGE NOTICE D" value="true"/>
+        <property key="CHANGE NOTICE E" value="true"/>
+        <property key="CHANGE NOTICE F" value="true"/>
+        <property key="CHANGE NOTICE G" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C 1" value="true"/>
+        <property key="I2C 2" value="true"/>
+        <property key="I2C 3" value="true"/>
+        <property key="I2C 4" value="true"/>
+        <property key="I2C 5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="REFERENCE CLOCK1" value="true"/>
+        <property key="REFERENCE CLOCK2" value="true"/>
+        <property key="REFERENCE CLOCK3" value="true"/>
+        <property key="REFERENCE CLOCK4" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SPI/I2S 3" value="true"/>
+        <property key="SPI/I2S 4" value="true"/>
+        <property key="SPI/I2S 5" value="true"/>
+        <property key="SPI/I2S 6" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="TIMER6" value="true"/>
+        <property key="TIMER7" value="true"/>
+        <property key="TIMER8" value="true"/>
+        <property key="TIMER9" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.ledbrightness" value="5"/>
+        <property key="programoptions.pgcconfig" value="pull down"/>
+        <property key="programoptions.pgcresistor.value" value="4.7"/>
+        <property key="programoptions.pgdconfig" value="pull down"/>
+        <property key="programoptions.pgdresistor.value" value="4.7"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value="1d000000-1d1fffff"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="voltagevalue" value="3.25"/>
+      </ICD4Tool>
+      <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CHANGE NOTICE" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CTMU" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C2" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="SPI/I2S 1" value="true"/>
+        <property key="SPI/I2S 2" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x1d003fff"/>
+        <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x1d003fff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>
