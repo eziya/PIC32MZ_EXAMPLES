@@ -306,792 +306,792 @@
         <Path dnOrder="1">Source Files/FreeRTOS</Path>
       </File>
       <File dnOrder="73">
-        <Name dnOrder="0">heap_2.c</Name>
-        <Path dnOrder="1">Source Files/FreeRTOS/portable/MemMang</Path>
-      </File>
-      <File dnOrder="74">
         <Name dnOrder="0">mpu_wrappers.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="75">
+      <File dnOrder="74">
         <Name dnOrder="0">queue.c</Name>
         <Path dnOrder="1">Source Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="76">
+      <File dnOrder="75">
         <Name dnOrder="0">tcpip_announce.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="77">
+      <File dnOrder="76">
         <Name dnOrder="0">tcp.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="78">
+      <File dnOrder="77">
         <Name dnOrder="0">drv_tmr_mapping.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
       </File>
-      <File dnOrder="79">
+      <File dnOrder="78">
         <Name dnOrder="0">arp.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="80">
+      <File dnOrder="79">
         <Name dnOrder="0">sys_reset_local.h</Name>
         <Path dnOrder="1">Header Files/framework/system/reset/src</Path>
       </File>
-      <File dnOrder="81">
+      <File dnOrder="80">
         <Name dnOrder="0">snmp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="82">
+      <File dnOrder="81">
         <Name dnOrder="0">queue.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="83">
+      <File dnOrder="82">
         <Name dnOrder="0">tcp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="84">
+      <File dnOrder="83">
         <Name dnOrder="0">drv_wifi_init.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="85">
+      <File dnOrder="84">
         <Name dnOrder="0">arp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="86">
+      <File dnOrder="85">
         <Name dnOrder="0">tcpip_commands_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="87">
+      <File dnOrder="86">
         <Name dnOrder="0">driver.h</Name>
         <Path dnOrder="1">Header Files/framework/driver</Path>
       </File>
-      <File dnOrder="88">
+      <File dnOrder="87">
         <Name dnOrder="0">aes_ofb.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="89">
+      <File dnOrder="88">
         <Name dnOrder="0">sys_int_pic32.c</Name>
         <Path dnOrder="1">Source Files/framework/system/int/src</Path>
       </File>
-      <File dnOrder="90">
+      <File dnOrder="89">
         <Name dnOrder="0">aes.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="91">
+      <File dnOrder="90">
         <Name dnOrder="0">net_pres.h</Name>
         <Path dnOrder="1">Header Files/framework/net/pres</Path>
       </File>
-      <File dnOrder="92">
+      <File dnOrder="91">
         <Name dnOrder="0">drv_spi_sys_queue.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
       </File>
-      <File dnOrder="93">
+      <File dnOrder="92">
         <Name dnOrder="0">drv_wifi_tx_power.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="94">
+      <File dnOrder="93">
         <Name dnOrder="0">aes_cbc.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="95">
+      <File dnOrder="94">
         <Name dnOrder="0">drv_tmr_compatibility.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/tmr</Path>
       </File>
-      <File dnOrder="96">
+      <File dnOrder="95">
         <Name dnOrder="0">sys_tmr_local.h</Name>
         <Path dnOrder="1">Header Files/framework/system/tmr/src</Path>
       </File>
-      <File dnOrder="97">
+      <File dnOrder="96">
         <Name dnOrder="0">tcpip_notify.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="98">
+      <File dnOrder="97">
         <Name dnOrder="0">tcpip_mac_object.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="99">
+      <File dnOrder="98">
         <Name dnOrder="0">lldp_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="100">
+      <File dnOrder="99">
         <Name dnOrder="0">igmp_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="101">
+      <File dnOrder="100">
         <Name dnOrder="0">zero_conf_multicast_dns.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="102">
+      <File dnOrder="101">
         <Name dnOrder="0">dhcps_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="103">
+      <File dnOrder="102">
         <Name dnOrder="0">drv_wifi_rtos_wrapper.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="104">
+      <File dnOrder="103">
         <Name dnOrder="0">drv_wifi_mac.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="105">
+      <File dnOrder="104">
         <Name dnOrder="0">drv_wifi_spi.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="106">
+      <File dnOrder="105">
         <Name dnOrder="0">icmpv6.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="107">
+      <File dnOrder="106">
         <Name dnOrder="0">ipv6.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="108">
+      <File dnOrder="107">
         <Name dnOrder="0">telnet.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="109">
+      <File dnOrder="108">
         <Name dnOrder="0">sys_int.h</Name>
         <Path dnOrder="1">Header Files/framework/system/int</Path>
       </File>
-      <File dnOrder="110">
+      <File dnOrder="109">
         <Name dnOrder="0">osal_freertos.h</Name>
         <Path dnOrder="1">Header Files/framework/osal/src</Path>
       </File>
-      <File dnOrder="111">
+      <File dnOrder="110">
         <Name dnOrder="0">smtp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="112">
+      <File dnOrder="111">
         <Name dnOrder="0">nbns.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="113">
+      <File dnOrder="112">
         <Name dnOrder="0">ndp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="114">
+      <File dnOrder="113">
         <Name dnOrder="0">berkeley_api.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="115">
+      <File dnOrder="114">
         <Name dnOrder="0">link_list.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="116">
+      <File dnOrder="115">
         <Name dnOrder="0">lldp_tlv.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="117">
+      <File dnOrder="116">
         <Name dnOrder="0">tcpip_module_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="118">
+      <File dnOrder="117">
         <Name dnOrder="0">drv_usart_local.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/usart/src</Path>
       </File>
-      <File dnOrder="119">
+      <File dnOrder="118">
         <Name dnOrder="0">osal_freertos.c</Name>
         <Path dnOrder="1">Source Files/framework/osal/src</Path>
       </File>
-      <File dnOrder="120">
+      <File dnOrder="119">
         <Name dnOrder="0">tasks.c</Name>
         <Path dnOrder="1">Source Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="121">
+      <File dnOrder="120">
         <Name dnOrder="0">tcpip_manager.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="122">
+      <File dnOrder="121">
         <Name dnOrder="0">drv_usart_read_write.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
       </File>
-      <File dnOrder="123">
+      <File dnOrder="122">
         <Name dnOrder="0">tcpip_heap_alloc.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="124">
+      <File dnOrder="123">
         <Name dnOrder="0">arp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="125">
+      <File dnOrder="124">
         <Name dnOrder="0">des3.h</Name>
         <Path dnOrder="1">Header Files/framework/crypto/src</Path>
       </File>
-      <File dnOrder="126">
+      <File dnOrder="125">
         <Name dnOrder="0">sys_common.h</Name>
         <Path dnOrder="1">Header Files/framework/system/common</Path>
       </File>
-      <File dnOrder="127">
+      <File dnOrder="126">
         <Name dnOrder="0">sys_buffer.h</Name>
         <Path dnOrder="1">Header Files/framework/system/common</Path>
       </File>
-      <File dnOrder="128">
+      <File dnOrder="127">
         <Name dnOrder="0">udp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="129">
+      <File dnOrder="128">
         <Name dnOrder="0">sys_clk_compatibility.h</Name>
         <Path dnOrder="1">Header Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="130">
+      <File dnOrder="129">
         <Name dnOrder="0">drv_wifi_raw.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="131">
+      <File dnOrder="130">
         <Name dnOrder="0">tcpip_announce.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="132">
+      <File dnOrder="131">
         <Name dnOrder="0">osal_impl_none.h</Name>
         <Path dnOrder="1">Header Files/framework/osal/src</Path>
       </File>
-      <File dnOrder="133">
+      <File dnOrder="132">
         <Name dnOrder="0">tftpc_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="134">
+      <File dnOrder="133">
         <Name dnOrder="0">tcpip_helpers.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="135">
+      <File dnOrder="134">
         <Name dnOrder="0">arp_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="136">
+      <File dnOrder="135">
         <Name dnOrder="0">dhcpv6.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="137">
+      <File dnOrder="136">
         <Name dnOrder="0">sys_clk_mapping.h</Name>
         <Path dnOrder="1">Header Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="138">
+      <File dnOrder="137">
         <Name dnOrder="0">aes_ecb_pic32.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="139">
+      <File dnOrder="138">
         <Name dnOrder="0">igmp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="140">
+      <File dnOrder="139">
         <Name dnOrder="0">drv_wifi_connection_manager.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="141">
+      <File dnOrder="140">
         <Name dnOrder="0">drv_wifi_priv.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="142">
+      <File dnOrder="141">
         <Name dnOrder="0">sys_module.h</Name>
         <Path dnOrder="1">Header Files/framework/system/common</Path>
       </File>
-      <File dnOrder="143">
+      <File dnOrder="142">
         <Name dnOrder="0">nbns_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="144">
+      <File dnOrder="143">
         <Name dnOrder="0">tcpip.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="145">
+      <File dnOrder="144">
         <Name dnOrder="0">drv_wifi_config_data.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="146">
+      <File dnOrder="145">
         <Name dnOrder="0">sys_queue.h</Name>
         <Path dnOrder="1">Header Files/framework/system/common</Path>
       </File>
-      <File dnOrder="147">
+      <File dnOrder="146">
         <Name dnOrder="0">sys_console_local.h</Name>
         <Path dnOrder="1">Header Files/framework/system/console/src</Path>
       </File>
-      <File dnOrder="148">
+      <File dnOrder="147">
         <Name dnOrder="0">icmp.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="149">
+      <File dnOrder="148">
         <Name dnOrder="0">drv_tmr_local.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
       </File>
-      <File dnOrder="150">
+      <File dnOrder="149">
         <Name dnOrder="0">sys_clk_pic32mz.h</Name>
         <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
       </File>
-      <File dnOrder="151">
+      <File dnOrder="150">
         <Name dnOrder="0">igmp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="152">
+      <File dnOrder="151">
         <Name dnOrder="0">dhcps_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="153">
+      <File dnOrder="152">
         <Name dnOrder="0">sys_console_uart.c</Name>
         <Path dnOrder="1">Source Files/framework/system/console/src</Path>
       </File>
-      <File dnOrder="154">
+      <File dnOrder="153">
         <Name dnOrder="0">drv_spi_sys_queue_fifo.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/spi/src</Path>
       </File>
-      <File dnOrder="155">
+      <File dnOrder="154">
         <Name dnOrder="0">drv_wifi_scan_helper.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="156">
+      <File dnOrder="155">
         <Name dnOrder="0">ipv4_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="157">
+      <File dnOrder="156">
         <Name dnOrder="0">sys_fs.h</Name>
         <Path dnOrder="1">Header Files/framework/system/fs</Path>
       </File>
-      <File dnOrder="158">
+      <File dnOrder="157">
         <Name dnOrder="0">tcpip_commands.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="159">
+      <File dnOrder="158">
         <Name dnOrder="0">zero_conf_link_local.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="160">
+      <File dnOrder="159">
         <Name dnOrder="0">icmp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="161">
+      <File dnOrder="160">
         <Name dnOrder="0">drv_wifi_raw.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="162">
+      <File dnOrder="161">
         <Name dnOrder="0">tcpip_types.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="163">
+      <File dnOrder="162">
         <Name dnOrder="0">berkeley_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="164">
+      <File dnOrder="163">
         <Name dnOrder="0">http_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="165">
+      <File dnOrder="164">
         <Name dnOrder="0">icmp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="166">
+      <File dnOrder="165">
         <Name dnOrder="0">smtp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="167">
+      <File dnOrder="166">
         <Name dnOrder="0">sys_console.h</Name>
         <Path dnOrder="1">Header Files/framework/system/console</Path>
       </File>
-      <File dnOrder="168">
+      <File dnOrder="167">
         <Name dnOrder="0">ndp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="169">
+      <File dnOrder="168">
         <Name dnOrder="0">drv_wifi_param_msg.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="170">
+      <File dnOrder="169">
         <Name dnOrder="0">drv_wifi_debug_output.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="171">
+      <File dnOrder="170">
         <Name dnOrder="0">drv_wifi_mgmt_msg.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="172">
+      <File dnOrder="171">
         <Name dnOrder="0">drv_spi_variant_mapping.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/spi/src</Path>
       </File>
-      <File dnOrder="173">
+      <File dnOrder="172">
         <Name dnOrder="0">sys_dma.c</Name>
         <Path dnOrder="1">Source Files/framework/system/dma</Path>
       </File>
-      <File dnOrder="174">
+      <File dnOrder="173">
         <Name dnOrder="0">snmp_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="175">
+      <File dnOrder="174">
         <Name dnOrder="0">drv_wifi_connection_profile.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="176">
+      <File dnOrder="175">
         <Name dnOrder="0">udp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="177">
+      <File dnOrder="176">
         <Name dnOrder="0">smtpc_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="178">
+      <File dnOrder="177">
         <Name dnOrder="0">drv_wifi_commands.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="179">
+      <File dnOrder="178">
         <Name dnOrder="0">hash_fnv.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="180">
+      <File dnOrder="179">
         <Name dnOrder="0">sys_random_local.h</Name>
         <Path dnOrder="1">Header Files/framework/system/random/src</Path>
       </File>
-      <File dnOrder="181">
+      <File dnOrder="180">
         <Name dnOrder="0">sys_dma.h</Name>
         <Path dnOrder="1">Header Files/framework/system/dma</Path>
       </File>
-      <File dnOrder="182">
+      <File dnOrder="181">
         <Name dnOrder="0">sys_reset.c</Name>
         <Path dnOrder="1">Source Files/framework/system/reset/src</Path>
       </File>
-      <File dnOrder="183">
+      <File dnOrder="182">
         <Name dnOrder="0">sys_tmr.h</Name>
         <Path dnOrder="1">Header Files/framework/system/tmr</Path>
       </File>
-      <File dnOrder="184">
+      <File dnOrder="183">
         <Name dnOrder="0">udp.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="185">
+      <File dnOrder="184">
         <Name dnOrder="0">tcpip_notify.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="186">
+      <File dnOrder="185">
         <Name dnOrder="0">projdefs.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="187">
+      <File dnOrder="186">
         <Name dnOrder="0">event_groups.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="188">
+      <File dnOrder="187">
         <Name dnOrder="0">lldp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="189">
+      <File dnOrder="188">
         <Name dnOrder="0">tcpip_helpers.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="190">
+      <File dnOrder="189">
         <Name dnOrder="0">sys_random.h</Name>
         <Path dnOrder="1">Header Files/framework/system/random</Path>
       </File>
-      <File dnOrder="191">
+      <File dnOrder="190">
         <Name dnOrder="0">http.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="192">
+      <File dnOrder="191">
         <Name dnOrder="0">drv_wifi_main.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="193">
+      <File dnOrder="192">
         <Name dnOrder="0">tcpip_manager_control.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="194">
+      <File dnOrder="193">
         <Name dnOrder="0">osal_definitions.h</Name>
         <Path dnOrder="1">Header Files/framework/osal</Path>
       </File>
-      <File dnOrder="195">
+      <File dnOrder="194">
         <Name dnOrder="0">ddns.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="196">
+      <File dnOrder="195">
         <Name dnOrder="0">tcpip_heap.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="197">
+      <File dnOrder="196">
         <Name dnOrder="0">tcpip_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="198">
+      <File dnOrder="197">
         <Name dnOrder="0">drv_wifi_com.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="199">
+      <File dnOrder="198">
         <Name dnOrder="0">aes_cfb.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="200">
+      <File dnOrder="199">
         <Name dnOrder="0">aes_ecb.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="201">
+      <File dnOrder="200">
         <Name dnOrder="0">port_asm.S</Name>
         <Path dnOrder="1">Source Files/FreeRTOS/portable/MPLAB/PIC32MZ</Path>
       </File>
-      <File dnOrder="202">
+      <File dnOrder="201">
         <Name dnOrder="0">drv_wifi_spi.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="203">
+      <File dnOrder="202">
         <Name dnOrder="0">drv_wifi_scan_helper.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="204">
+      <File dnOrder="203">
         <Name dnOrder="0">hash_fnv.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="205">
+      <File dnOrder="204">
         <Name dnOrder="0">lldp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="206">
+      <File dnOrder="205">
         <Name dnOrder="0">drv_wifi_debug_output.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="207">
+      <File dnOrder="206">
         <Name dnOrder="0">drv_wifi_context_loader.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="208">
+      <File dnOrder="207">
         <Name dnOrder="0">driver_common.h</Name>
         <Path dnOrder="1">Header Files/framework/driver</Path>
       </File>
-      <File dnOrder="209">
+      <File dnOrder="208">
         <Name dnOrder="0">drv_spi.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/spi/src/dynamic</Path>
       </File>
-      <File dnOrder="210">
+      <File dnOrder="209">
         <Name dnOrder="0">drv_wifi_eint.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="211">
+      <File dnOrder="210">
         <Name dnOrder="0">sys_tmr.c</Name>
         <Path dnOrder="1">Source Files/framework/system/tmr/src</Path>
       </File>
-      <File dnOrder="212">
+      <File dnOrder="211">
         <Name dnOrder="0">tcp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="213">
+      <File dnOrder="212">
         <Name dnOrder="0">tcpip_commands.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="214">
+      <File dnOrder="213">
         <Name dnOrder="0">croutine.c</Name>
         <Path dnOrder="1">Source Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="215">
+      <File dnOrder="214">
         <Name dnOrder="0">ddns_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="216">
+      <File dnOrder="215">
         <Name dnOrder="0">ftp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="217">
+      <File dnOrder="216">
         <Name dnOrder="0">drv_wifi.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w</Path>
       </File>
-      <File dnOrder="218">
+      <File dnOrder="217">
         <Name dnOrder="0">drv_wifi_events.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="219">
+      <File dnOrder="218">
         <Name dnOrder="0">dhcp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="220">
+      <File dnOrder="219">
         <Name dnOrder="0">http_net.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="221">
+      <File dnOrder="220">
         <Name dnOrder="0">sntp.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="222">
+      <File dnOrder="221">
         <Name dnOrder="0">drv_usart_buffer_queue.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
       </File>
-      <File dnOrder="223">
+      <File dnOrder="222">
         <Name dnOrder="0">zero_conf_link_local.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="224">
+      <File dnOrder="223">
         <Name dnOrder="0">tcpip_announce_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="225">
+      <File dnOrder="224">
         <Name dnOrder="0">sys_clk.h</Name>
         <Path dnOrder="1">Header Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="226">
+      <File dnOrder="225">
         <Name dnOrder="0">dhcps.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="227">
+      <File dnOrder="226">
         <Name dnOrder="0">dnss_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="228">
+      <File dnOrder="227">
         <Name dnOrder="0">tcpip_heap_internal.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="229">
+      <File dnOrder="228">
         <Name dnOrder="0">dns.c</Name>
         <Path dnOrder="1">Source Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="230">
+      <File dnOrder="229">
         <Name dnOrder="0">aes_ctr.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="231">
+      <File dnOrder="230">
         <Name dnOrder="0">drv_tmr.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/tmr/src/dynamic</Path>
       </File>
-      <File dnOrder="232">
+      <File dnOrder="231">
         <Name dnOrder="0">sys_int_private.h</Name>
         <Path dnOrder="1">Header Files/framework/system/int/src</Path>
       </File>
-      <File dnOrder="233">
+      <File dnOrder="232">
         <Name dnOrder="0">deprecated_definitions.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="234">
+      <File dnOrder="233">
         <Name dnOrder="0">drv_usart.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/usart</Path>
       </File>
-      <File dnOrder="235">
+      <File dnOrder="234">
         <Name dnOrder="0">iperf.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="236">
+      <File dnOrder="235">
         <Name dnOrder="0">drv_wifi_scan.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="237">
+      <File dnOrder="236">
         <Name dnOrder="0">drv_wifi_eint.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="238">
+      <File dnOrder="237">
         <Name dnOrder="0">tcpip_ethernet.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="239">
+      <File dnOrder="238">
         <Name dnOrder="0">zero_conf_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="240">
+      <File dnOrder="239">
         <Name dnOrder="0">port.c</Name>
         <Path dnOrder="1">Source Files/FreeRTOS/portable/MPLAB/PIC32MZ</Path>
       </File>
-      <File dnOrder="241">
+      <File dnOrder="240">
         <Name dnOrder="0">drv_wifi_softap_client_cache.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="242">
+      <File dnOrder="241">
         <Name dnOrder="0">zero_conf_link_local_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="243">
+      <File dnOrder="242">
         <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/tmr/src</Path>
       </File>
-      <File dnOrder="244">
+      <File dnOrder="243">
         <Name dnOrder="0">sntp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="245">
+      <File dnOrder="244">
         <Name dnOrder="0">sys_console.c</Name>
         <Path dnOrder="1">Source Files/framework/system/console/src</Path>
       </File>
-      <File dnOrder="246">
+      <File dnOrder="245">
         <Name dnOrder="0">http_net_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="247">
+      <File dnOrder="246">
         <Name dnOrder="0">StackMacros.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="248">
+      <File dnOrder="247">
         <Name dnOrder="0">drv_wifi_mac.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="249">
+      <File dnOrder="248">
         <Name dnOrder="0">tftpc.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="250">
+      <File dnOrder="249">
         <Name dnOrder="0">ftp_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="251">
+      <File dnOrder="250">
         <Name dnOrder="0">sys_ports.h</Name>
         <Path dnOrder="1">Header Files/framework/system/ports</Path>
       </File>
-      <File dnOrder="252">
+      <File dnOrder="251">
         <Name dnOrder="0">dnss.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="253">
+      <File dnOrder="252">
         <Name dnOrder="0">drv_usart.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/usart/src/dynamic</Path>
       </File>
-      <File dnOrder="254">
+      <File dnOrder="253">
         <Name dnOrder="0">tcpip_reboot_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="255">
+      <File dnOrder="254">
         <Name dnOrder="0">croutine.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="256">
+      <File dnOrder="255">
         <Name dnOrder="0">drv_wifi_iwpriv.h</Name>
         <Path dnOrder="1">Header Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="257">
+      <File dnOrder="256">
         <Name dnOrder="0">dhcpv6_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="258">
+      <File dnOrder="257">
         <Name dnOrder="0">FreeRTOS.h</Name>
         <Path dnOrder="1">Header Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="259">
+      <File dnOrder="258">
         <Name dnOrder="0">drv_wifi_connection_algorithm.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="260">
+      <File dnOrder="259">
         <Name dnOrder="0">event_groups.c</Name>
         <Path dnOrder="1">Source Files/FreeRTOS</Path>
       </File>
-      <File dnOrder="261">
+      <File dnOrder="260">
         <Name dnOrder="0">dhcpv6_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="262">
+      <File dnOrder="261">
         <Name dnOrder="0">ftp_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="263">
+      <File dnOrder="262">
         <Name dnOrder="0">drv_wifi_mgmt_msg.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="264">
+      <File dnOrder="263">
         <Name dnOrder="0">sys_clk_variant_mapping.h</Name>
         <Path dnOrder="1">Header Files/framework/system/clk/src</Path>
       </File>
-      <File dnOrder="265">
+      <File dnOrder="264">
         <Name dnOrder="0">drv_wifi_pbkdf2.c</Name>
         <Path dnOrder="1">Source Files/framework/driver/wifi/mrf24w/src</Path>
       </File>
-      <File dnOrder="266">
+      <File dnOrder="265">
         <Name dnOrder="0">oahash.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="267">
+      <File dnOrder="266">
         <Name dnOrder="0">http_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="268">
+      <File dnOrder="267">
         <Name dnOrder="0">telnet_manager.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="269">
+      <File dnOrder="268">
         <Name dnOrder="0">ipv6_private.h</Name>
         <Path dnOrder="1">Header Files/framework/tcpip/src</Path>
+      </File>
+      <File dnOrder="269">
+        <Name dnOrder="0">heap_4.c</Name>
+        <Path dnOrder="1">Source Files/FreeRTOS/portable/MemMang</Path>
       </File>
       <File dnOrder="270">
         <Name dnOrder="0">drv_wifi_rtos_wrapper.h</Name>
@@ -1137,7 +1137,7 @@
       <Template dnOrder="7">
         <Name dnOrder="0">FreeRTOSConfig.h</Name>
         <Path dnOrder="1">Header Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">536FE2D1BBE79CF82E0EF98AB18D1F79</Checksum>
+        <Checksum dnOrder="2">8C8497354B4E36F962F8760969A76956</Checksum>
       </Template>
       <Template dnOrder="8">
         <Name dnOrder="0">sys_clk.c</Name>
@@ -1162,7 +1162,7 @@
       <Template dnOrder="12">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">8B71F55E938C02AFD3F3C68E85FC3201</Checksum>
+        <Checksum dnOrder="2">C70A3A0D222CEE4F205AC68EC4FFEA99</Checksum>
       </Template>
       <Template dnOrder="13">
         <Name dnOrder="0">main.c</Name>
@@ -1208,12 +1208,12 @@
       <Template dnOrder="21">
         <Name dnOrder="0">system_tasks.c</Name>
         <Path dnOrder="1">Source Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">E3401C0ADD9EA86AE0649B9980CEE33B</Checksum>
+        <Checksum dnOrder="2">97EBE152F8432D92E0F01F3F6F6263F1</Checksum>
       </Template>
       <Template dnOrder="22">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">2C762C4AB839B63A38BCC7F5A0DB3E2E</Checksum>
+        <Checksum dnOrder="2">D31FA59C4A3B34F2AF5601D2CC5B5773</Checksum>
       </Template>
       <Template dnOrder="23">
         <Name dnOrder="0">rtos_hooks.c</Name>

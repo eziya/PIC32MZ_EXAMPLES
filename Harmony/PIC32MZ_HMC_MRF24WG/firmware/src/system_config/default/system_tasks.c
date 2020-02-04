@@ -88,12 +88,12 @@ void SYS_Tasks ( void )
     /* Create OS Thread for Sys Tasks. */
     xTaskCreate((TaskFunction_t) _SYS_Tasks,
                 "Sys Tasks",
-                2048, NULL, 2, NULL);
+                2048, NULL, 3, NULL);
 
     /* Create OS Thread for WNETCOM Tasks. */
     xTaskCreate((TaskFunction_t) _WNETCOM_Tasks,
                 "WNETCOM Tasks",
-                2048, NULL, 2, NULL);
+                1024, NULL, 2, NULL);
 
     /**************
      * Start RTOS * 

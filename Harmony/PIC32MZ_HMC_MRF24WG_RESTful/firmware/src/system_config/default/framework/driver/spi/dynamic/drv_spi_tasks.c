@@ -46,6 +46,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "driver/spi/src/dynamic/drv_spi_internal.h"
 #include <stdbool.h>
 
+// DMA Scratch Pad
+uint8_t sDrvSpiRxDummy[DRV_SPI_DMA_DUMMY_BUFFER_SIZE];
+uint8_t sDrvSpiTxDummy[DRV_SPI_DMA_DUMMY_BUFFER_SIZE];
 
 
 int32_t DRV_SPI_ISRMasterEBM8BitTasks ( struct DRV_SPI_DRIVER_OBJECT * pDrvInstance )    
@@ -113,11 +116,64 @@ int32_t DRV_SPI_ISRMasterEBM8BitTasks ( struct DRV_SPI_DRIVER_OBJECT * pDrvInsta
             PLIB_SPI_BufferClear(spiId);
         }
 
+        /* Set up DMA Receive job.  This is done here to ensure that the RX job is ready to receive when TXing starts*/
+        if ((pDrvInstance->rxDmaThreshold != 0) && (currentJob->dataLeftToRx > pDrvInstance->rxDmaThreshold))
+        {
+            PLIB_SPI_FIFOInterruptModeSelect(spiId, SPI_FIFO_INTERRUPT_WHEN_RECEIVE_BUFFER_IS_NOT_EMPTY);
+            uint8_t * ptr = &(currentJob->rxBuffer[currentJob->dataRxed]);
+            uint32_t len = MIN(MIN(PLIB_DMA_MAX_TRF_SIZE, DRV_SPI_DMA_TXFER_SIZE), currentJob->dataLeftToRx);
+            void * spiPtr = PLIB_SPI_BufferAddressGet(spiId);
+            currentJob->rxDMAProgressStage = DRV_SPI_DMA_DATA_INPROGRESS;
+            currentJob->dataLeftToRx -= len;
+            currentJob->dataRxed += len;
+            pDrvInstance->rxEnabled = false;
+            SYS_DMA_ChannelTransferAdd(pDrvInstance->rxDmaChannelHandle, spiPtr, 1, ptr, len, 1);
+        }
+        else if ((currentJob->rxDMAProgressStage == DRV_SPI_DMA_NONE) && (currentJob->dataLeftToRx == 0) && (pDrvInstance->rxDmaThreshold != 0) && (currentJob->dummyLeftToRx > pDrvInstance->rxDmaThreshold))
+        {
+            PLIB_SPI_FIFOInterruptModeSelect(spiId, SPI_FIFO_INTERRUPT_WHEN_RECEIVE_BUFFER_IS_NOT_EMPTY);
+            uint8_t * ptr = sDrvSpiRxDummy;
+            uint32_t len = MIN(MIN(MIN(PLIB_DMA_MAX_TRF_SIZE, DRV_SPI_DMA_DUMMY_BUFFER_SIZE), DRV_SPI_DMA_TXFER_SIZE), currentJob->dummyLeftToRx);
+            void * spiPtr = PLIB_SPI_BufferAddressGet(spiId);
+            currentJob->rxDMAProgressStage = DRV_SPI_DMA_DUMMY_INPROGRESS;
+            currentJob->dummyLeftToRx -= len;
+            pDrvInstance->rxEnabled = false;
+            SYS_DMA_ChannelTransferAdd(pDrvInstance->rxDmaChannelHandle, spiPtr, 1, ptr, len, 1);
+        }       
+        /* Set up the DMA Transmit job here.  This is done after the RX job to help prevent buffer overruns.*/
+        if ((pDrvInstance->txDmaThreshold != 0) && (currentJob->dataLeftToTx > pDrvInstance->txDmaThreshold))
+        {
+            PLIB_SPI_FIFOInterruptModeSelect(spiId, SPI_FIFO_INTERRUPT_WHEN_TRANSMIT_BUFFER_IS_1HALF_EMPTY_OR_MORE);
+            uint8_t * ptr = &(currentJob->txBuffer[currentJob->dataTxed]);
+            uint32_t len = MIN(MIN(PLIB_DMA_MAX_TRF_SIZE, DRV_SPI_DMA_TXFER_SIZE), currentJob->dataLeftToTx);
+            void * spiPtr = PLIB_SPI_BufferAddressGet(pDrvInstance->spiId);
+            currentJob->txDMAProgressStage = DRV_SPI_DMA_DATA_INPROGRESS;
+            currentJob->dataLeftToTx -= len;
+            currentJob->dataTxed += len;
+            pDrvInstance->txEnabled = false;
+            SYS_DMA_ChannelTransferAdd(pDrvInstance->txDmaChannelHandle, ptr, len, spiPtr, 1, 1);
+
+        }
+        else if ((currentJob->txDMAProgressStage == DRV_SPI_DMA_NONE) && (currentJob->dataLeftToTx == 0) && (pDrvInstance->txDmaThreshold != 0) && (currentJob->dummyLeftToTx > pDrvInstance->txDmaThreshold))
+        {
+            PLIB_SPI_FIFOInterruptModeSelect(spiId, SPI_FIFO_INTERRUPT_WHEN_TRANSMIT_BUFFER_IS_1HALF_EMPTY_OR_MORE);
+            uint8_t * ptr = sDrvSpiTxDummy;
+            uint32_t len = MIN(MIN(MIN(PLIB_DMA_MAX_TRF_SIZE, DRV_SPI_DMA_DUMMY_BUFFER_SIZE), DRV_SPI_DMA_TXFER_SIZE), currentJob->dummyLeftToTx);
+            void * spiPtr = PLIB_SPI_BufferAddressGet(pDrvInstance->spiId);
+            currentJob->txDMAProgressStage = DRV_SPI_DMA_DUMMY_INPROGRESS;
+            currentJob->dummyLeftToTx -= len;
+            pDrvInstance->txEnabled = false;
+            SYS_DMA_ChannelTransferAdd(pDrvInstance->txDmaChannelHandle, ptr, len, spiPtr, 1, 1);
+        }
+        bool rxDMAInProgress = (currentJob->rxDMAProgressStage == DRV_SPI_DMA_DATA_INPROGRESS) || (currentJob->rxDMAProgressStage == DRV_SPI_DMA_DUMMY_INPROGRESS);
+        bool txDMAInProgress = (currentJob->txDMAProgressStage == DRV_SPI_DMA_DATA_INPROGRESS) || (currentJob->txDMAProgressStage == DRV_SPI_DMA_DUMMY_INPROGRESS);
                 
         continueLoop = false;
         /* Execute the sub tasks */
              if 
+            (!txDMAInProgress &&
             (currentJob->dataLeftToTx +currentJob->dummyLeftToTx != 0)
+            )
         {
             DRV_SPI_MasterEBMSend8BitISR(pDrvInstance);
         }
@@ -128,13 +184,13 @@ int32_t DRV_SPI_ISRMasterEBM8BitTasks ( struct DRV_SPI_DRIVER_OBJECT * pDrvInsta
         volatile size_t bytesLeft = currentJob->dataLeftToRx + currentJob->dummyLeftToRx;
         // Check to see if we have any data left to receive and update the bytes left.
 
-        if (bytesLeft != 0)
+        if ((bytesLeft != 0) && !rxDMAInProgress)
         {
             DRV_SPI_MasterEBMReceive8BitISR(pDrvInstance);
             bytesLeft = currentJob->dataLeftToRx + currentJob->dummyLeftToRx;
         }
      
-        if (bytesLeft == 0)
+        if ((bytesLeft == 0) && !rxDMAInProgress && !txDMAInProgress)
         {
                     // Disable the interrupt, or more correctly don't re-enable it later*/
                     pDrvInstance->rxEnabled = false;
@@ -172,11 +228,18 @@ int32_t DRV_SPI_ISRMasterEBM8BitTasks ( struct DRV_SPI_DRIVER_OBJECT * pDrvInsta
                         break;
                     }
                 }
+        else if (rxDMAInProgress)
+        {
+            // DMA is in progress
+            // Wipe out the symbols in Progress
+            pDrvInstance->rxEnabled = false;
+            pDrvInstance->symbolsInProgress = 0;
+        }
 
     
         /* Check to see if the interrupts would fire again if so just go back into 
            the loop instead of suffering the interrupt latency of exiting and re-entering*/
-        if (pDrvInstance->currentJob != NULL)
+        if ((pDrvInstance->currentJob != NULL) && (!rxDMAInProgress || !txDMAInProgress))
         {   
             /* Clear the Interrupts */
             SYS_INT_SourceStatusClear(pDrvInstance->rxInterruptSource);
@@ -212,3 +275,65 @@ int32_t DRV_SPI_ISRMasterEBM8BitTasks ( struct DRV_SPI_DRIVER_OBJECT * pDrvInsta
 
 
 
+
+void DRV_SPI_SetupDMA( struct DRV_SPI_DRIVER_OBJECT * pDrvInstance)
+{
+
+        DMA_TRIGGER_SOURCE txSource = 0;
+        DMA_TRIGGER_SOURCE rxSource = 0;
+
+        switch(pDrvInstance->spiId)
+        {
+            case SPI_ID_1:
+            {
+                txSource = DMA_TRIGGER_SPI_1_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_1_RECEIVE;
+            }
+            break;
+            case SPI_ID_2:
+            {
+                txSource = DMA_TRIGGER_SPI_2_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_2_RECEIVE;
+            }
+            break;
+            case SPI_ID_3:
+            {
+                txSource = DMA_TRIGGER_SPI_3_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_3_RECEIVE;
+            }
+            break;
+            case SPI_ID_4:
+            {
+                txSource = DMA_TRIGGER_SPI_4_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_4_RECEIVE;
+            }
+            break;
+            case SPI_ID_5:
+            {
+                txSource = DMA_TRIGGER_SPI_5_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_5_RECEIVE;
+            }
+            break;
+            case SPI_ID_6:
+            {
+                txSource = DMA_TRIGGER_SPI_6_TRANSMIT;
+                rxSource = DMA_TRIGGER_SPI_6_RECEIVE;
+            }
+            break;
+            default:
+               break;
+        }
+        if (pDrvInstance->txDmaThreshold != 0)
+        {
+            pDrvInstance->txDmaChannelHandle = SYS_DMA_ChannelAllocate(pDrvInstance->txDmaChannel);
+            SYS_DMA_ChannelSetup(pDrvInstance->txDmaChannelHandle, SYS_DMA_CHANNEL_OP_MODE_BASIC, txSource);
+            SYS_DMA_ChannelTransferEventHandlerSet(pDrvInstance->txDmaChannelHandle, pDrvInstance->sendDMAHander, (uintptr_t)pDrvInstance);
+        }
+            
+        if (pDrvInstance->rxDmaThreshold != 0)
+        {
+            pDrvInstance->rxDmaChannelHandle = SYS_DMA_ChannelAllocate(pDrvInstance->rxDmaChannel);
+            SYS_DMA_ChannelSetup(pDrvInstance->rxDmaChannelHandle, SYS_DMA_CHANNEL_OP_MODE_BASIC, rxSource);
+            SYS_DMA_ChannelTransferEventHandlerSet(pDrvInstance->rxDmaChannelHandle, pDrvInstance->receiveDMAHander, (uintptr_t)pDrvInstance);                
+        }
+}

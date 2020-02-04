@@ -135,6 +135,8 @@ int32_t DRV_SPI_SetVTable(struct DRV_SPI_DRIVER_OBJECT * driverObject, const DRV
     {
     case _SPI_DRV_VTABLE_I_M_E_8:
         driverObject->vfMainTask = DRV_SPI_ISRMasterEBM8BitTasks;
+        driverObject->sendDMAHander = DRV_SPI_ISRDMAMasterSendEventHandler8bit;
+        driverObject->receiveDMAHander = DRV_SPI_ISRDMAMasterReceiveEventHandler8bit;
         break;
     default:
         SYS_ASSERT(false, "\r\nInvalid SPI Configuration.");

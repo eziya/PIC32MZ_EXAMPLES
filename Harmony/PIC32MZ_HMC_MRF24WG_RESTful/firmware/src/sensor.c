@@ -93,7 +93,6 @@ SENSOR_DATA sensorData;
 // *****************************************************************************
 // *****************************************************************************
 
-
 /* TODO:  Add any necessary local functions.
  */
 
@@ -113,7 +112,7 @@ bool BME280_I2C_Init(void)
     {
         return false;
     }
-    
+
     return true;
 }
 
@@ -121,11 +120,11 @@ int8_t BME280_i2c_read(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len
 {
     DRV_I2C_BUFFER_HANDLE hI2C4Buf; //buffer handle
     DRV_I2C_BUFFER_EVENT eventStatus; //event status
-    
+
     hI2C4Buf = DRV_I2C_Transmit(sensorData.hI2C4, id << 1, &reg_addr, 1, NULL); //transmit register address
 
     if (hI2C4Buf == NULL)
-    {        
+    {
         return -1;
     }
 
@@ -143,7 +142,7 @@ int8_t BME280_i2c_read(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t len
     hI2C4Buf = DRV_I2C_Receive(sensorData.hI2C4, id << 1, data, len, NULL); //read data
 
     if (hI2C4Buf == NULL)
-    {        
+    {
         return -1;
     }
 
@@ -178,7 +177,7 @@ int8_t BME280_i2c_write(uint8_t id, uint8_t reg_addr, uint8_t *data, uint16_t le
     hI2C4Buf = DRV_I2C_Transmit(sensorData.hI2C4, id << 1, &buf[0], sizeof (buf), NULL); //transmit register address + data
 
     if (hI2C4Buf == NULL)
-    {        
+    {
         free(buf);
         return -1;
     }
@@ -205,9 +204,9 @@ void BME280_delay_ms(uint32_t period)
 }
 
 bool BME280_Init(void)
-{    
+{
     int8_t rslt; //result
-    
+
     /* configure device */
     sensorData.dev.dev_id = BME280_I2C_ADDR_PRIM;
     sensorData.dev.intf = BME280_I2C_INTF;
@@ -225,7 +224,7 @@ bool BME280_Init(void)
     sensorData.dev.settings.filter = BME280_FILTER_COEFF_16;
     rslt = bme280_set_sensor_settings(BME280_OSR_PRESS_SEL | BME280_OSR_TEMP_SEL | BME280_OSR_HUM_SEL | BME280_FILTER_SEL, &sensorData.dev);
     if (rslt != BME280_OK) return false;
-    
+
     return true;
 }
 
@@ -233,13 +232,13 @@ void BME280_Task(void)
 {
     struct bme280_data comp_data; //measured data
     int8_t rslt; //result
-    
+
     /* set FORCED mode, turn into SLEEP mode after measurement */
     rslt = bme280_set_sensor_mode(BME280_FORCED_MODE, &sensorData.dev);
     if (rslt != BME280_OK) return;
-    
+
     sensorData.dev.delay_ms(40);
-    
+
     /* get measured data */
     rslt = bme280_get_sensor_data(BME280_ALL, &comp_data, &sensorData.dev);
     if (rslt == BME280_OK)
@@ -247,10 +246,10 @@ void BME280_Task(void)
         sensorData.temperature = comp_data.temperature / 100.0; /* degree */
         sensorData.humidity = comp_data.humidity / 1024.0; /* percentage */
         sensorData.pressure = comp_data.pressure / 10000.0; /* hPa */
-        
+
         SYS_CONSOLE_PRINT("Temp: %03.1fC, Humid: %03.1f%%, Pressure: %04.1fhPa\n", sensorData.temperature, sensorData.humidity, sensorData.pressure);
     }
-    
+
     vTaskDelay(1000 / portTICK_PERIOD_MS);
 }
 
@@ -292,34 +291,34 @@ void SENSOR_Tasks(void)
     /* Check the application's current state. */
     switch (sensorData.state)
     {
-    
-    /* Application's initial state. */
+
+        /* Application's initial state. */
     case SENSOR_STATE_INIT:
     {
         bool appInitialized = false;
 
-        if(!BME280_I2C_Init()) break;
-        if(!BME280_Init()) break;
+        if (!BME280_I2C_Init()) break;
+        if (!BME280_Init()) break;
 
         appInitialized = true;
 
         if (appInitialized)
         {
             sensorData.state = SENSOR_STATE_SERVICE_TASKS;
-        }        
+        }
     }
-    break;
+        break;
 
     case SENSOR_STATE_SERVICE_TASKS:
     {
-        BME280_Task();               
+        BME280_Task();
     }
-    break;
+        break;
 
-    /* TODO: implement your application state machine.*/
+        /* TODO: implement your application state machine.*/
 
 
-    /* The default state should never be executed. */
+        /* The default state should never be executed. */
     default:
     {
         /* TODO: Handle error in application's state machine. */

@@ -75,15 +75,15 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
     This structure should be initialized by the APP_Initialize function.
     
     Application strings and buffers are be defined outside this structure.
-*/
+ */
 extern SENSOR_DATA sensorData;
 
 NET_DATA netData;
 static char netServerIP[] = "52.204.41.253";
 
-static SYS_STATUS          	net_tcpipStat;
-static TCPIP_NET_HANDLE    	net_netH;
-static int                 	net_nNets;
+static SYS_STATUS net_tcpipStat;
+static TCPIP_NET_HANDLE net_netH;
+static int net_nNets;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -92,7 +92,7 @@ static int                 	net_nNets;
 // *****************************************************************************
 
 /* TODO:  Add any necessary callback functions.
-*/
+ */
 
 // *****************************************************************************
 // *****************************************************************************
@@ -106,8 +106,8 @@ static int                 	net_nNets;
     
    Remarks:
     Feeds the USB write function. 
-*/
-static void TCP_Client_TX_Task (void)
+ */
+static void TCP_Client_TX_Task(void)
 {
     static IPV4_ADDR dwLastIP[2] = {
         {-1},
@@ -119,98 +119,98 @@ static void TCP_Client_TX_Task (void)
 
     switch (netData.txTaskState)
     {
-        case NET_TCPIP_WAIT_FOR_IP:
-        {
-            net_nNets = TCPIP_STACK_NumberOfNetworksGet();
+    case NET_TCPIP_WAIT_FOR_IP:
+    {
+        net_nNets = TCPIP_STACK_NumberOfNetworksGet();
 
-            for (i = 0; i < net_nNets; i++)
+        for (i = 0; i < net_nNets; i++)
+        {
+            net_netH = TCPIP_STACK_IndexToNet(i);
+            ipAddr.Val = TCPIP_STACK_NetAddress(net_netH);
+
+            if (dwLastIP[i].Val != ipAddr.Val)
             {
-                net_netH = TCPIP_STACK_IndexToNet(i);
-                ipAddr.Val = TCPIP_STACK_NetAddress(net_netH);
+                dwLastIP[i].Val = ipAddr.Val;
 
-                if (dwLastIP[i].Val != ipAddr.Val)
-                {
-                    dwLastIP[i].Val = ipAddr.Val;
-
-                    SYS_CONSOLE_PRINT("NET[%d]: IP Address: ", netData.txTaskState);
-                    SYS_CONSOLE_PRINT("%d.%d.%d.%d \r\n", ipAddr.v[0], ipAddr.v[1], ipAddr.v[2], ipAddr.v[3]);
-                }
-
-                if (TCPIP_STACK_NetIsReady(net_netH))
-                {
-                    netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
-                    SYS_CONSOLE_PRINT("NET[%d]: TCPIP_STACK_NetIsReady.\r\n", netData.txTaskState);
-                }
+                SYS_CONSOLE_PRINT("NET[%d]: IP Address: ", netData.txTaskState);
+                SYS_CONSOLE_PRINT("%d.%d.%d.%d \r\n", ipAddr.v[0], ipAddr.v[1], ipAddr.v[2], ipAddr.v[3]);
             }
-        }    
-        break;
-        case NET_TCPIP_WAITING_FOR_COMMAND:
-        {
-            IPV4_ADDR addr;
-                                    
-            TCPIP_Helper_StringToIPAddress(netServerIP, &addr);
-            netData.socket = TCPIP_TCP_ClientOpen(IP_ADDRESS_TYPE_IPV4, netData.port,
-                                                  (IP_MULTI_ADDRESS*) & addr);
 
-            if (netData.socket == INVALID_SOCKET)
+            if (TCPIP_STACK_NetIsReady(net_netH))
             {
                 netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
-                SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ClientOpen returns INVALID_SOCKET.\r\n", netData.txTaskState);
-                break;
+                SYS_CONSOLE_PRINT("NET[%d]: TCPIP_STACK_NetIsReady.\r\n", netData.txTaskState);
             }
-
-            netData.txTaskState = NET_TCPIP_WAIT_FOR_CONNECTION;            
         }
+    }
         break;
-        case NET_TCPIP_WAIT_FOR_CONNECTION:
-        {
-            static char buffer[256];
-            static uint16_t nWrite, nWritten;
-            
-            if (!TCPIP_TCP_IsConnected(netData.socket))
-            {                
-                break;
-            }                       
+    case NET_TCPIP_WAITING_FOR_COMMAND:
+    {
+        IPV4_ADDR addr;
 
-            if (TCPIP_TCP_PutIsReady(netData.socket) == 0)
-            {
-                break;
-            }
+        TCPIP_Helper_StringToIPAddress(netServerIP, &addr);
+        netData.socket = TCPIP_TCP_ClientOpen(IP_ADDRESS_TYPE_IPV4, netData.port,
+                                              (IP_MULTI_ADDRESS*) & addr);
 
-            SYS_CONSOLE_PRINT("NET[%d]: TCPIP Client connected.\r\n", netData.txTaskState);
-
-            sprintf(buffer, "GET /update?api_key=HFHWS8TT31XGVHTM&field1=%3.1f&field2=%3.1f&field3=%4.1f\r\n\r\n", 
-                    sensorData.temperature, sensorData.humidity, sensorData.pressure);
-            nWrite = strlen(buffer);            
-            SYS_CONSOLE_PRINT("NET[%d]:\r\n%s\r\n", netData.txTaskState, buffer);                
-            
-            nWritten = TCPIP_TCP_ArrayPut(netData.socket, (uint8_t*) buffer, nWrite);            
-            if(nWritten != nWrite)
-            {
-                SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ArrayPut failed.\r\n", netData.txTaskState);                
-            }                      
-                        
-            netData.txTaskState = NET_TCPIP_TX_DONE;            
-        }
-        break;
-        case NET_TCPIP_TX_DONE:
+        if (netData.socket == INVALID_SOCKET)
         {
             netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
-            vTaskDelay(30000 / portTICK_PERIOD_MS);
+            SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ClientOpen returns INVALID_SOCKET.\r\n", netData.txTaskState);
+            break;
         }
+
+        netData.txTaskState = NET_TCPIP_WAIT_FOR_CONNECTION;
+    }
+        break;
+    case NET_TCPIP_WAIT_FOR_CONNECTION:
+    {
+        static char buffer[256];
+        static uint16_t nWrite, nWritten;
+
+        if (!TCPIP_TCP_IsConnected(netData.socket))
+        {
+            break;
+        }
+
+        if (TCPIP_TCP_PutIsReady(netData.socket) == 0)
+        {
+            break;
+        }
+
+        SYS_CONSOLE_PRINT("NET[%d]: TCPIP Client connected.\r\n", netData.txTaskState);
+
+        sprintf(buffer, "GET /update?api_key=HFHWS8TT31XGVHTM&field1=%3.1f&field2=%3.1f&field3=%4.1f\r\n\r\n",
+                sensorData.temperature, sensorData.humidity, sensorData.pressure);
+        nWrite = strlen(buffer);
+        SYS_CONSOLE_PRINT("NET[%d]:\r\n%s\r\n", netData.txTaskState, buffer);
+
+        nWritten = TCPIP_TCP_ArrayPut(netData.socket, (uint8_t*) buffer, nWrite);
+        if (nWritten != nWrite)
+        {
+            SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ArrayPut failed.\r\n", netData.txTaskState);
+        }
+
+        netData.txTaskState = NET_TCPIP_TX_DONE;
+    }
+        break;
+    case NET_TCPIP_TX_DONE:
+    {
+        netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
+        vTaskDelay(10000 / portTICK_PERIOD_MS);
+    }
         break;
 
         /* The default state should never be executed. */
-        default:
-        {
-            /* TODO: Handle error in application's state machine. */            
-        }
+    default:
+    {
+        /* TODO: Handle error in application's state machine. */
+    }
         break;
     }
 }
 
 /* TODO:  Add any necessary local functions.
-*/
+ */
 
 
 // *****************************************************************************
@@ -227,17 +227,16 @@ static void TCP_Client_TX_Task (void)
     See prototype in net.h.
  */
 
-void NET_Initialize ( void )
+void NET_Initialize(void)
 {
     /* Place the App state machine in its initial state. */
     netData.state = NET_STATE_INIT;
     netData.port = 80;
-    
+
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
 }
-
 
 /******************************************************************************
   Function:
@@ -247,7 +246,7 @@ void NET_Initialize ( void )
     See prototype in net.h.
  */
 
-void NET_Tasks ( void )
+void NET_Tasks(void)
 {
     int i;
 
@@ -313,7 +312,7 @@ void NET_Tasks ( void )
     }
 }
 
- 
+
 
 /*******************************************************************************
  End of File

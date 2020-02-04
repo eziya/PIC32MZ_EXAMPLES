@@ -90,7 +90,7 @@ void SYS_Tasks ( void )
     /* Create OS Thread for Sys Tasks. */
     xTaskCreate((TaskFunction_t) _SYS_Tasks,
                 "Sys Tasks",
-                2048, NULL, 2, NULL);
+                2048, NULL, 3, NULL);
 
     /* Create OS Thread for NET Tasks. */
     xTaskCreate((TaskFunction_t) _NET_Tasks,
