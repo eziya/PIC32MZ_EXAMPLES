@@ -138,13 +138,13 @@ static void TCP_Client_TX_Task(void)
 
             if (TCPIP_STACK_NetIsReady(net_netH))
             {
-                netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
+                netData.txTaskState = NET_TCPIP_CONNECT_TO_SERVER;
                 SYS_CONSOLE_PRINT("NET[%d]: TCPIP_STACK_NetIsReady.\r\n", netData.txTaskState);
             }
         }
     }
         break;
-    case NET_TCPIP_WAITING_FOR_COMMAND:
+    case NET_TCPIP_CONNECT_TO_SERVER:
     {
         IPV4_ADDR addr;
 
@@ -154,18 +154,18 @@ static void TCP_Client_TX_Task(void)
 
         if (netData.socket == INVALID_SOCKET)
         {
-            netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
+            netData.txTaskState = NET_TCPIP_CONNECT_TO_SERVER;
             SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ClientOpen returns INVALID_SOCKET.\r\n", netData.txTaskState);
             break;
         }
 
-        netData.txTaskState = NET_TCPIP_WAIT_FOR_CONNECTION;
+        netData.txTaskState = NET_TCPIP_TX_DATA;
     }
         break;
-    case NET_TCPIP_WAIT_FOR_CONNECTION:
+    case NET_TCPIP_TX_DATA:
     {
         static char buffer[256];
-        static uint16_t nWrite, nWritten;
+        static uint16_t nWrite, nWritten, nWrittenAll;
 
         if (!TCPIP_TCP_IsConnected(netData.socket))
         {
@@ -183,19 +183,23 @@ static void TCP_Client_TX_Task(void)
                 sensorData.temperature, sensorData.humidity, sensorData.pressure);
         nWrite = strlen(buffer);
         SYS_CONSOLE_PRINT("NET[%d]:\r\n%s\r\n", netData.txTaskState, buffer);
-
-        nWritten = TCPIP_TCP_ArrayPut(netData.socket, (uint8_t*) buffer, nWrite);
-        if (nWritten != nWrite)
+                
+        nWrittenAll = 0;
+        while(nWrite > 0)
         {
-            SYS_CONSOLE_PRINT("NET[%d]: TCPIP_TCP_ArrayPut failed.\r\n", netData.txTaskState);
-        }
+            nWritten = TCPIP_TCP_ArrayPut(netData.socket, (uint8_t*)(buffer + nWrittenAll), nWrite);
+            nWrite -= nWritten;
+            nWrittenAll += nWritten;
+        }        
 
         netData.txTaskState = NET_TCPIP_TX_DONE;
     }
         break;
     case NET_TCPIP_TX_DONE:
-    {
-        netData.txTaskState = NET_TCPIP_WAITING_FOR_COMMAND;
+    {        
+        TCPIP_TCP_Close(netData.socket);
+        
+        netData.txTaskState = NET_TCPIP_CONNECT_TO_SERVER;
         vTaskDelay(10000 / portTICK_PERIOD_MS);
     }
         break;
