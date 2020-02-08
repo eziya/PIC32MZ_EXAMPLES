@@ -33,3 +33,4 @@
 30. MPLAB Harmony I2C + BME280 (https://blog.naver.com/eziya76/221786024627)
 31. MPLAB Harmony WIFI(MRF24WG0MA) + TCP (https://blog.naver.com/eziya76/221793641726)
 32. MPLAB Harmony WIFI(MRF24WG0MA) + RESTful API (https://blog.naver.com/eziya76/221797790462)
+33. MPLAB Harmony USB Host Mass Storage (https://blog.naver.com/eziya76/221801251355)
