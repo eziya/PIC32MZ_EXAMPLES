@@ -363,7 +363,7 @@
       <Template dnOrder="1">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/ports/src</Path>
-        <Checksum dnOrder="2">93E28E8A978CC9B734D61F2B5B37DE5D</Checksum>
+        <Checksum dnOrder="2">B8B988A308952061295660D351E977B1</Checksum>
       </Template>
       <Template dnOrder="2">
         <Name dnOrder="0">system_init.c</Name>
@@ -427,7 +427,6 @@
         <Name dnOrder="0">sys_reset.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/reset/src</Path>
         <Checksum dnOrder="2">BE66429899862E1E38250CA4006D5F46</Checksum>
-        <ProjectFileChecksum dnOrder="3">017F24CB70D2020D449A59E13B3D1235</ProjectFileChecksum>
       </Template>
       <Template dnOrder="15">
         <Name dnOrder="0">system_tasks.c</Name>
@@ -437,7 +436,7 @@
       <Template dnOrder="16">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">C6332A049E511C33144EED1CE8872352</Checksum>
+        <Checksum dnOrder="2">98E40CA8522FE5D1635FC98BFF061DC2</Checksum>
       </Template>
       <Template dnOrder="17">
         <Name dnOrder="0">app.h</Name>

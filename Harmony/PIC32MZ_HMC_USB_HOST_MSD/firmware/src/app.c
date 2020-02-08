@@ -266,7 +266,7 @@ void APP_Tasks(void)
             break;
             
         case APP_STATE_WAIT_FOR_BUS_ENABLE_COMPLETE:
-            if(USB_HOST_BusIsEnabled(0)) 
+            if(USB_HOST_BusIsEnabled(0)) //check bus status 
             {
                 SYS_CONSOLE_PRINT("USB_HOST_BusIsEnabled.\r\n");   
                 appData.state = APP_STATE_WAIT_FOR_DEVICE_ATTACH;

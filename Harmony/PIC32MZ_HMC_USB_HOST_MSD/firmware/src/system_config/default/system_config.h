@@ -102,7 +102,7 @@ extern "C" {
 #define SYS_PORT_A_CNEN         0x0000
 
 #define SYS_PORT_B_ANSEL        0xB3FE
-#define SYS_PORT_B_TRIS         0xF7FE
+#define SYS_PORT_B_TRIS         0xFFFE
 #define SYS_PORT_B_LAT          0x0001
 #define SYS_PORT_B_ODC          0x0000
 #define SYS_PORT_B_CNPU         0x0000
@@ -118,7 +118,7 @@ extern "C" {
 #define SYS_PORT_C_CNEN         0x0000
 
 #define SYS_PORT_D_ANSEL        0xC1C0
-#define SYS_PORT_D_TRIS         0xFFEF
+#define SYS_PORT_D_TRIS         0xFFFF
 #define SYS_PORT_D_LAT          0x0000
 #define SYS_PORT_D_ODC          0x0000
 #define SYS_PORT_D_CNPU         0x0000
@@ -142,7 +142,7 @@ extern "C" {
 #define SYS_PORT_F_CNEN         0x0000
 
 #define SYS_PORT_G_ANSEL        0x0FBC
-#define SYS_PORT_G_TRIS         0x7FBD
+#define SYS_PORT_G_TRIS         0xFFBF
 #define SYS_PORT_G_LAT          0x0000
 #define SYS_PORT_G_ODC          0x0000
 #define SYS_PORT_G_CNPU         0x0000
@@ -370,13 +370,6 @@ extern "C" {
 // *****************************************************************************
 /*** Application Defined Pins ***/
 
-/*** Functions for LED4 pin ***/
-#define LED4Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_15)
-#define LED4On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_15)
-#define LED4Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_15)
-#define LED4StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_15)
-#define LED4StateSet(Value) PLIB_PORTS_PinWrite(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_15, Value)
-
 /*** Functions for LED1 pin ***/
 #define LED1Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_6)
 #define LED1On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_6)
@@ -390,36 +383,6 @@ extern "C" {
 #define USB_ENOff() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_0)
 #define USB_ENStateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_0)
 #define USB_ENStateSet(Value) PLIB_PORTS_PinWrite(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_0, Value)
-
-/*** Functions for LED3 pin ***/
-#define LED3Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_11)
-#define LED3On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_11)
-#define LED3Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_11)
-#define LED3StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_11)
-#define LED3StateSet(Value) PLIB_PORTS_PinWrite(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_11, Value)
-
-/*** Functions for LED2 pin ***/
-#define LED2Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_D, PORTS_BIT_POS_4)
-#define LED2On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_D, PORTS_BIT_POS_4)
-#define LED2Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_D, PORTS_BIT_POS_4)
-#define LED2StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_D, PORTS_BIT_POS_4)
-#define LED2StateSet(Value) PLIB_PORTS_PinWrite(PORTS_ID_0, PORT_CHANNEL_D, PORTS_BIT_POS_4, Value)
-
-/*** Functions for MRF24_HIBERNATE pin ***/
-#define MRF24_HIBERNATEToggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_1)
-#define MRF24_HIBERNATEOn() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_1)
-#define MRF24_HIBERNATEOff() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_1)
-#define MRF24_HIBERNATEStateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_1)
-#define MRF24_HIBERNATEStateSet(Value) PLIB_PORTS_PinWrite(PORTS_ID_0, PORT_CHANNEL_G, PORTS_BIT_POS_1, Value)
-
-/*** Functions for BTN2 pin ***/
-#define BTN2StateGet() PLIB_PORTS_PinGet(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_5)
-
-/*** Functions for BTN1 pin ***/
-#define BTN1StateGet() PLIB_PORTS_PinGet(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_4)
-
-/*** Functions for USB_OC pin ***/
-#define USB_OCStateGet() PLIB_PORTS_PinGet(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_14)
 
 
 /*** Application Instance 0 Configuration ***/
